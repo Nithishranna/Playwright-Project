@@ -29,5 +29,5 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest
+          xvfb-run pytest
   
