@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  playwright-tests:
+    build: .
+    container_name: playwright-framework
+
+    volumes:
+      - .:/app
+
+    command: pytest -v
